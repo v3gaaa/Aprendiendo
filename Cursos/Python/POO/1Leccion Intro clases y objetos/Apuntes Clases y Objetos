@@ -1,0 +1,7 @@
+#Las clases son basicamente como si hicieras tu propia libreria donde tienes varias funciones.
+#Los archivos de clase los puedes exportar desde otros codigos como si fueran librerias.
+
+#Las clases usan metodos (__init__, __str__) los cuales son especificados con doble guion bajo.
+
+#__init__ sirve para inicializar variables
+#__str__ sirve para editar el return predeterminado cuando se manda a imprimir la clase (las funciones dentro de una clase pueden tener su propio return)
