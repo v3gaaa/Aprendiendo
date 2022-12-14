@@ -13,7 +13,3 @@ class Raton(DispositivoEntrada):
 
 
 
-
-raton1 = Raton("inalambrico","Razer")
-
-print(raton1)
