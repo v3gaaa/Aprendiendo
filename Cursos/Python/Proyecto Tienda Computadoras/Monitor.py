@@ -17,11 +17,11 @@ class Monitor:
 
     @property
     def marca(self):
-        return self.tipoEntrada
+        return self.marca
 
     @marca.setter
     def marca(self,tipo):
-        self.tipoEntrada=tipo
+        self.marca=tipo
 
     def __str__(self):
-        return f"(Tamaño: {self.tipoEntrada}, Marca: {self.marca})"
+        return f"(Tamaño: {self.tamano}, Marca: {self.marca})"
