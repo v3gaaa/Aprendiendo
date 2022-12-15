@@ -14,11 +14,12 @@ class Orden:
     def agregar_computadora(self,compu):
         self.listaOrden.append(compu)
 
-    def imprimirOrden(self):
+    def __str__(self):
         strOrden = ""
         for i in range(len(self.listaOrden)):
             strOrden += f"\n \n {self.listaOrden[i]}"
-        return strOrden
+            
+        return f"""Orden: {self.idOrden} \nComputadoras: {strOrden}"""
 
            
 if __name__ == "__main__":
@@ -35,4 +36,4 @@ if __name__ == "__main__":
     orden = Orden()
     orden.agregar_computadora(compu1)
     orden.agregar_computadora(compu2)
-    print(orden.imprimirOrden())
+    print(orden)
