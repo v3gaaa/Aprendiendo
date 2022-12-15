@@ -1,16 +1,27 @@
-import Computadora
+from Computadora import Computadora
+from Raton import Raton
+from Monitor import Monitor
+from Teclado import Teclado
 
 class Orden:
     contador_ordenes = 0
 
     def __init__(self):
-        contador_ordenes +=1
-        self.idOrden = contador_ordenes
+        Orden.contador_ordenes +=1
+        self.idOrden = Orden.contador_ordenes
         self.listaOrden = []
 
     def agregar_computadora(self,compu):
         self.listaOrden.append(compu)
 
-    def __str__(self):
+    def imprimirOrden(self):
+        strOrden = ""
         for i in range(len(self.listaOrden)):
-            print(self.listaOrden[i].__str__())
+            strOrden += f"\n {self.listaOrden[i]}"
+        return strOrden
+
+    #def __str__(self):
+        #strOrden = self.imprimirOrden
+        #return strOrden
+            
+            
